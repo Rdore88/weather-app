@@ -1,0 +1,25 @@
+#results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    background-color: snow;
+    box-shadow: 10px 5px 5px gray;
+    margin: .5em;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+#error {
+    color: red;
+}
