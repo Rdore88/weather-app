@@ -1,3 +1,5 @@
+// I like that you've captured an example response.
+// How would you explain to a student why you should or shouldn't do this when interacting with an API?
 // const response = {
 //     "coord": {
 //         "lon": -0.13,
@@ -41,9 +43,11 @@
 //     "cod": 200
 // }
 
+// Do you have a strong opinion on semi-colons?
 function createInfo(key, value) {
     const infoContainer = document.createElement('div');
     infoContainer.className = 'info-container'
+    // Any reason why you prefer this over the `classList` API?
     const keyElement = document.createElement('p')
     keyElement.textContent = key;
     const valueElement = document.createElement('p');
@@ -60,6 +64,7 @@ function createWeatherOutput(data, userSearch) {
     const header = document.createElement('h3');
     header.textContent = `Weather for ${userSearch}`;
     newDiv.appendChild(header);
+    // Nice! I like the use of the `createInfo` function.
     newDiv.appendChild(createInfo('Current Temp:', data.main.temp));
     newDiv.appendChild(createInfo('Today\'s high:', data.main.temp_max));
     newDiv.appendChild(createInfo('Today\'s low:', data.main.temp_min));
